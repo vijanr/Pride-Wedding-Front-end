@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PrideWeddingPlanners.Models;
 
 namespace PrideWeddingPlanners.Migrations
 {
     [DbContext(typeof(WeddingDBContext))]
-    partial class WeddingDBContextModelSnapshot : ModelSnapshot
+    [Migration("20210129080849_Updated Payment")]
+    partial class UpdatedPayment
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -163,16 +165,7 @@ namespace PrideWeddingPlanners.Migrations
                     b.Property<string>("email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("password")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("retypepassword")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("tele_no")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("username")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ID");
