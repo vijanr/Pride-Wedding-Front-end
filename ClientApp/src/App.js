@@ -10,10 +10,12 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import './App.css';
 import "./index.css";
 import "./welcome.css";
+import "./selection.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Welcome from "./components/welcome.component";
 import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
+import Selection from "./components/selection.component";
 
 import './custom.css'
 //import react from 'react';
@@ -52,10 +54,11 @@ function App() {
       <div className="outer">
         <div className="inner">
           <Switch>
-            <Route exact path='/' component={Welcome} />
-            <Route path="/register" component={Welcome} />  
+            <Route exact path='/' component={Selection} />
+            <Route path="/register" component={Welcome} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/sign-in" component={Login} />
+            
             
           </Switch>
         </div>
