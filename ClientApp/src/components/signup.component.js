@@ -7,6 +7,11 @@ export default class SignUp extends Component {
                 <h3>Register</h3>
 
                 <div className="form-group">
+                    <label>NIC Number</label>
+                    <input type="text" className="form-control" placeholder="NIC Number" />
+                </div>
+
+                <div className="form-group">
                     <label>First name</label>
                     <input type="text" className="form-control" placeholder="First name" />
                 </div>
