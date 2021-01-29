@@ -13,8 +13,18 @@ namespace PrideWeddingPlanners.Models
         public int client_NIC { get; set; }
         public string F_name { get; set; }
         public string L_name { get; set; }
-        public string tele_no { get; set; }
+       
+        [DataType(DataType.PhoneNumber)]
+        public int tele_no { get; set; }
         public string Address { get; set; }
+
+        [DataType(DataType.EmailAddress)]
         public string email { get; set; }
+        
+        [DataType(DataType.Password)]
+        public string password { get; set; }
+
+        [DataType(DataType.Password)]
+        public string retypepassword { get; set; }
     }
 }
