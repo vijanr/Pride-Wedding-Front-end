@@ -69,3 +69,6 @@ body, html, .App, #root, .outer {
 .forgot-password a {
   color: #167bff;
 }
+.font_size {
+  font-size:10px; 
+}

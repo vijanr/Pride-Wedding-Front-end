@@ -1,40 +1,48 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom';
 
 export default class SignUp extends Component {
     render() {
         return (
             <form>
-                <h3>Register</h3>
+                <h3>Registration</h3>
 
                 <div className="form-group">
-                    <label>NIC Number</label>
-                    <input type="text" className="form-control" placeholder="NIC Number" />
+                    <label classname="font_size">NIC number</label>
+                    <input type="text" className="font_size" placeholder="NIC Number" />
                 </div>
 
                 <div className="form-group">
-                    <label>First name</label>
-                    <input type="text" className="form-control" placeholder="First name" />
+                    <label classname="font_size">First name</label>
+                    <input type="text" className="font_size" placeholder="First name" />
                 </div>
 
                 <div className="form-group">
-                    <label>Last name</label>
-                    <input type="text" className="form-control" placeholder="Last name" />
+                    <label classname="font_size">Last name</label>
+                    <input type="text" className="font_size" placeholder="Last name" />
                 </div>
 
                 <div className="form-group">
-                    <label>Email</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <label classname="font_size">Email</label>
+                    <input type="email" className="font_size" placeholder="Enter email" />
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <label classname="font_size">Password</label>
+                    <input type="password" className="font_size" placeholder="Enter password" />
                 </div>
 
-                <button type="submit" className="btn btn-dark btn-lg btn-block">Register</button>
-                <p className="forgot-password text-right">
-                    Already registered <a href="#">log in?</a>
-                </p>
+                <div className="form-group">
+                    <label classname="font_size">Confirm Password</label>
+                    <input type="password" className="font_size" placeholder="Enter password" />
+                </div>
+
+                <Link to="/sign-in">
+                 <button type="submit" className="btn btn-dark btn-lg btn-block">Submit</button>
+                </Link>
+                <Link to="/sign-in">
+                 <p className="forgot-password text-right">Already registered <a href="#">log in?</a></p>
+                </Link>
             </form>
         );
     }

@@ -71,3 +71,12 @@ body, html, .App, #root, .outer {
   color: #167bff;
 }
 
+.font_size {
+  font-size:12px; 
+  align-items: middle;
+  left:50%;
+  right:50%;
+  position: absolute;
+  color:rgb(10, 10, 128);
+}
+
