@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+
 import "./index.css";
 export default class Login extends Component {
     render() {
         return (
             <form>
 
-                <h3>Log in</h3>
+                <h3>Verify Log in</h3>
 
                 <div className="form-group">
                     <label>Email</label>
@@ -24,10 +25,8 @@ export default class Login extends Component {
                     </div>
                 </div>
 
-                <button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button>
-                <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                </p>
+                <button type="submit" className="btn btn-dark btn-lg btn-block">Submit</button>
+               
             </form>
         );
     }
