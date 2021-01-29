@@ -17,10 +17,12 @@ namespace PrideWeddingPlanners.Models
         [DataType(DataType.PhoneNumber)]
         public int tele_no { get; set; }
         public string Address { get; set; }
+        public string username { get; set; }
 
         [DataType(DataType.EmailAddress)]
-        public string email { get; set; }
         
+        public string email { get; set; }
+
         [DataType(DataType.Password)]
         public string password { get; set; }
 
