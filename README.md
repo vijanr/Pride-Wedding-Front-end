@@ -1,2 +1,2 @@
-# Pride Wedding Front-end
+# Pride Wedding Planners Project
  
