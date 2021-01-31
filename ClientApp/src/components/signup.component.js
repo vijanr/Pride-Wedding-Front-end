@@ -37,7 +37,7 @@ export default class SignUp extends Component {
                     <input type="password" className="font_size" placeholder="Enter password" />
                 </div>
 
-                <Link to="/sign-in">
+                <Link to="/verify-login">
                  <button type="submit" className="btn btn-dark btn-lg btn-block">Submit</button>
                 </Link>
                 <Link to="/sign-in">

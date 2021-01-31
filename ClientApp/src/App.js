@@ -16,7 +16,8 @@ import Welcome from "./components/welcome.component";
 import Login from "./components/login.component";
 import SignUp from "./components/signup.component";
 import Selection from "./components/selection.component";
-
+import Path from "./components/path.component";
+import Client_Selection from "./components/client-selection.component";
 import './custom.css'
 //import react from 'react';
 
@@ -56,9 +57,10 @@ function App() {
           <Switch>
             <Route exact path='/' component={Selection} />
             <Route path="/register" component={Welcome} />
+            <Route path="/path" component={Path} />
             <Route path="/sign-up" component={SignUp} />
-            <Route path="/sign-in" component={Login} />
-            
+            <Route path="/verify-login" component={Login} />
+            <Route path="/client-selection" component={Client_Selection} />
             
           </Switch>
         </div>
