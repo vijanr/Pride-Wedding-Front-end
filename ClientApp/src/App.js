@@ -19,6 +19,7 @@ import Selection from "./components/selection.component";
 import Path from "./components/path.component";
 import Client_Selection from "./components/client-selection.component";
 import Signin from "./components/signin.component";
+import Contactinfo from "./components/contactinfo.component";
 import './custom.css'
 //import react from 'react';
 
@@ -41,7 +42,7 @@ function App() {
     <div className="App">
       <nav className="navbar navbar-expand-lg navbar-light fixed-top">
         <div className="container">
-          <Link>CALL US +9477423909 | CONTACT US</Link>
+          <Link classname="nav-link" to={"/contact-info"}>CALL US +9477423909 | CONTACT US</Link>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ml-auto">
             
@@ -66,7 +67,7 @@ function App() {
             <Route path="/verify-login" component={Login} />
             <Route path="/client-selection" component={Client_Selection} />
             <Route path="/sign-in" component={Signin}/>
-            
+            <Route path="/contact-info" component={Contactinfo}/>
           </Switch>
         </div>
       </div>
