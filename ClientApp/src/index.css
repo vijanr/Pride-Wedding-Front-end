@@ -72,3 +72,7 @@ body, html, .App, #root, .outer {
 .font_size {
   font-size:10px; 
 }
+.text-center{
+  font-size: 14px;
+  text-align: center;
+}

@@ -18,6 +18,7 @@ import SignUp from "./components/signup.component";
 import Selection from "./components/selection.component";
 import Path from "./components/path.component";
 import Client_Selection from "./components/client-selection.component";
+import Signin from "./components/signin.component";
 import './custom.css'
 //import react from 'react';
 
@@ -47,6 +48,9 @@ function App() {
               <li className="nav-item">
                 <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/sign-in"}>Sign In</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -61,6 +65,7 @@ function App() {
             <Route path="/sign-up" component={SignUp} />
             <Route path="/verify-login" component={Login} />
             <Route path="/client-selection" component={Client_Selection} />
+            <Route path="/sign-in" component={Signin}/>
             
           </Switch>
         </div>
