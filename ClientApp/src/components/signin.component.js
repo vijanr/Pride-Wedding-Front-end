@@ -32,11 +32,14 @@ export default class Login extends Component {
                 Or continue with your social account
               </div>
               <FacebookLoginButton classname="mt-1 mb-1"/>
-              <div className="text-center">
-                <a herf="sign-up">Sign up</a>
+              <div className="forgot-password text-right">
+              <Link to="/sign-up">
+              sign up
+                </Link>
                 <span className="p-2">|</span>
-                <a herf="/sign-up">Forgot Password</a>
-      
+                <Link to="/sign-up">
+               Forgot Password
+               </Link>
               </div>         
           </form>
         );
