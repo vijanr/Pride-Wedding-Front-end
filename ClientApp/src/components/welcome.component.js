@@ -1,8 +1,9 @@
-import { render } from '@testing-library/react';
+
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+
 import { Link } from 'react-router-dom';
 import './welcome.css';
+
 
 
 
@@ -41,7 +42,7 @@ export default class Employee extends Component {
         return (
             <div>
                  <h1 className="testClass"> WELCOME TO PRIDE WEDDING SERVICE  </h1>
-                  <h1 className="testClass2">  </h1>
+                  <h1 className="testClass2"> </h1>
                    <h2 className="testClass5"> | CAPTURE  YOUR  DREAM  WEDDING | </h2>
                  
                  <div> 

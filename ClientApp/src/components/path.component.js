@@ -10,7 +10,7 @@ export default class Employee extends Component {
     render() {
         return (
             <div>
-                 <h1 className="testClass"> PUBLISHING ADVERTISMENTS & ORDERING PACKAGES  </h1>
+                 <h1 className="testClass"> PUBLISHING ADVERTISMENTS & DISCOVERING PACKAGES </h1>
                   <h1 className="testClass8">  </h1>
                    <h2 className="testClass5"> | LOGGING AS| </h2>
                  
