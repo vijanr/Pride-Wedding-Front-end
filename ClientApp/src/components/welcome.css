@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  background-image: url("source.gif");
+  background-image: url("./images/source.gif");
 
   
 }
@@ -56,7 +58,7 @@ code {
   border-style: groove;
   border-width: 1px;
   border-radius: 15px;
-  background-image: url("move.gif");
+  background-image: url("./images/move.gif");
   font-size: 20px;
   font-style: bold;
   justify-content: middle;
@@ -82,7 +84,7 @@ code {
     border-style: groove;
     border-color: coral;
     border-width: 7px;
-    background-image: url("couple3.PNG");
+    background-image: url("./images/couple3.PNG");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -115,7 +117,7 @@ code {
   border-style: groove;
   border-color: coral;
   border-width: 7px;
-  background-image: url("giphy.gif");
+  background-image: url("./images/giphy.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -132,7 +134,7 @@ code {
   border-style: groove;
   border-color: coral;
   border-width: 7px;
-  background-image: url("giphy.gif");
+  background-image: url("./images/giphy.gif");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;

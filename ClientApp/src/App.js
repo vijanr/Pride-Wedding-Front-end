@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-//import React, { Component } from './components';
+
+//import React, { Component } from './images';
 //import { Route } from 'react-router';
 //import { Layout } from './components/Layout';
 //import { Home } from './components/Home';
@@ -9,8 +10,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import './App.css';
 import "./index.css";
-import "./welcome.css";
-import "./selection.css";
+import "./components/welcome.css";
+import "./components/selection.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Welcome from "./components/welcome.component";
 import Login from "./components/login.component";
