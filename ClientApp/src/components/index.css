@@ -72,7 +72,8 @@ body, html, .App, #root, .outer {
 }
 
 .font_size {
-  font-size:12px; 
+  font-size:0.550em;
+  list-style: height 0.2em;
   align-items: middle;
   left:50%;
   right:50%;

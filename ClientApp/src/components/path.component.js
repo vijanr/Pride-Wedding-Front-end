@@ -27,7 +27,9 @@ export default class Employee extends Component {
                  <h3 className="testClass5">OR</h3>
 
                  <div class="flex-parent jc-center">
+                      <Link to="/sign-up-2">
                         <button  class="magenta">Merchent</button>
+                      </Link>
                  </div>
 
 
