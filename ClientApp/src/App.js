@@ -15,12 +15,15 @@ import "./components/selection.css";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Welcome from "./components/welcome.component";
 import Login from "./components/login.component";
+import Login_2 from "./components/login2.component";
 import SignUp from "./components/signup.component";
 import Selection from "./components/selection.component";
 import Path from "./components/path.component";
 import Client_Selection from "./components/client-selection.component";
 import Signin from "./components/signin.component";
 import Contactinfo from "./components/contactinfo.component";
+import MerchentSignup from "./components/merchentregister.component";
+import MerchentAdd from "./components/merchentadd.component";
 import './custom.css'
 //import react from 'react';
 
@@ -48,7 +51,7 @@ function App() {
             <ul className="navbar-nav ml-auto">
             
               <li className="nav-item">
-                <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
+                <Link className="nav-link" to={"/selection"}>Home</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/sign-in"}>Sign In</Link>
@@ -62,10 +65,14 @@ function App() {
         <div className="inner">
           <Switch>
             <Route exact path='/' component={Selection} />
+            <Route path="/selection" component={Selection} />
             <Route path="/register" component={Welcome} />
             <Route path="/path" component={Path} />
             <Route path="/sign-up" component={SignUp} />
+            <Route path="/sign-up-2" component={MerchentSignup}/>
+            <Route path="/merchentadd" component={MerchentAdd}/>
             <Route path="/verify-login" component={Login} />
+            <Route path="/verify-login-2" component={Login_2} />
             <Route path="/client-selection" component={Client_Selection} />
             <Route path="/sign-in" component={Signin}/>
             <Route path="/contact-info" component={Contactinfo}/>

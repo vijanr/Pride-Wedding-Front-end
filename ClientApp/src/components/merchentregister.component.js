@@ -8,26 +8,19 @@ export default class SignUp extends Component {
                 <h3 classname="font_size">Registration</h3>
 
                 <div className="form-group">
-                    <label classname="font_size">NIC number</label>
-                    <input type="text" className="font_size" placeholder="NIC Number" />
-                </div>
-
-                <div className="form-group">
-                    <label classname="font_size">First name</label>
-                    <input type="text" className="font_size" placeholder="First name" />
-                </div>
-
-                <div className="form-group">
-                    <label classname="font_size">Last name</label>
-                    <input type="text" className="font_size" placeholder="Last name" />
+                    <label classname="font_size">Company name</label>
+                    <input type="text" className="font_size" placeholder="Company name" />
                 </div>
 
                 <div className="form-group">
                     <label classname="font_size">Telephone number</label>
-                    <input type="text" className="font_size" placeholder="Teleohone number" />
+                    <input type="text" className="font_size" placeholder="Telephone number" />
                 </div>
 
-              
+                <div className="form-group">
+                    <label classname="font_size">Company catogary</label>
+                    <input type="text" className="font_size" placeholder="Company catogary" />
+                </div>
 
                 <div className="form-group">
                     <label classname="font_size">Username</label>
@@ -48,7 +41,7 @@ export default class SignUp extends Component {
                     <input type="password" className="font_size" placeholder="Enter password" />
                 </div>
 
-                <Link to="/verify-login">
+                <Link to="/verify-login-2">
                  <button type="submit" className="btn btn-dark btn-lg btn-block">Submit</button>
                 </Link>
                 <Link to="/sign-in">
