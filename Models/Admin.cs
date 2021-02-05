@@ -10,7 +10,7 @@ namespace PrideWeddingPlanners.Models
     {
         [Key]
         public int ID { get; set; }
-        public string customer_no { get; set; }
-        public string vendor_no { get; set; }
+        public string CustomerNo { get; set; }
+        public string VendorNo { get; set; }
     }
 }

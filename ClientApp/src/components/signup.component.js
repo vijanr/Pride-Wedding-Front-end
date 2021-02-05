@@ -27,7 +27,7 @@ export default class SignUp extends Component {
                     <input type="text" className="font_size" placeholder="Teleohone number" />
                 </div>
 
-              
+
 
                 <div className="form-group">
                     <label classname="font_size">Username</label>
@@ -49,10 +49,10 @@ export default class SignUp extends Component {
                 </div>
 
                 <Link to="/verify-login">
-                 <button type="submit" className="btn btn-dark btn-lg btn-block">Submit</button>
+                    <button type="submit" className="btn btn-dark btn-lg btn-block">Submit</button>
                 </Link>
                 <Link to="/sign-in">
-                 <p className="forgot-password text-right">Already registered <a href="#">log in?</a></p>
+                    <p className="forgot-password text-right">Already registered <a href="#">log in?</a></p>
                 </Link>
             </form>
         );
