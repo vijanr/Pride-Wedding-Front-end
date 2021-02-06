@@ -12,9 +12,9 @@ namespace PrideWeddingPlanners.Models
         public int ID { get; set; }
 
         [DataType(DataType.CreditCard)]
-        public string card_no { get; set; }
-        public string cardholder_name { get; set; }
-        public string exp_date { get; set; }
+        public string CardNo { get; set; }
+        public string CardholderName { get; set; }
+        public string ExpDate { get; set; }
         public string CVV { get; set; }
     }
 }

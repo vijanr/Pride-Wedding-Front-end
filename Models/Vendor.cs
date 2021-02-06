@@ -8,23 +8,24 @@ namespace PrideWeddingPlanners.Models
 {
     public class Vendor
     {
+
         [Key]
         public int ID { get; set; }
-        public string company_name { get; set; }
+        public string CompanyName { get; set; }
 
         [DataType(DataType.PhoneNumber)]
-        public string tele_no { get; set; }
-        public string company_catogary { get; set; }
-        
-        public string username { get; set; }
+        public string TelephoneNo { get; set; }
+        public string CompanyCatogary { get; set; }
+
+        public string UserName { get; set; }
 
         [DataType(DataType.EmailAddress)]
-        public string email { get; set; }
+        public string Email { get; set; }
 
         [DataType(DataType.Password)]
-        public string password { get; set; }
+        public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        public string retypepassword { get; set; }
+        public string ConfirmPassword { get; set; }
     }
 }
