@@ -12,17 +12,17 @@ namespace PrideWeddingPlanners.Models
 		public int ID { get; set; }
 
 		[DataType(DataType.Currency)]
-		public string price { get; set; }
-		public string detail { get; set; }
+		public string Price { get; set; }
+		public string Detail { get; set; }
 
 		[DataType(DataType.Date)]
-		public string start_date { get; set; }
+		public string StartDate { get; set; }
 
 		[DataType(DataType.Url)]
-		public string imageurl { get; set; }
+		public string Imageurl { get; set; }
 
 		[DataType(DataType.Date)]
-		public string end_date { get; set; }
-		public int package_no { get; set; }
+		public string EndDate { get; set; }
+		public int PackageNo { get; set; }
 	}
 }

@@ -10,9 +10,18 @@ namespace PrideWeddingPlanners.Models
     {
         [Key]
         public int ID { get; set; }
-        public string username { get; set; }
-        
+        [Required]
+        public string UserName { get; set; }
+
+       /* [Required]
+        [DataType(DataType.EmailAddress)]
+        [EmailAddress]
+        public string Email { get; set; }
+       */
+
+        [Required]
         [DataType(DataType.Password)]
-        public string password { get; set; }
+        public string Password { get; set; }
     }
+
 }

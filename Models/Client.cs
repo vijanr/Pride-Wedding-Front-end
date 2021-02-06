@@ -8,25 +8,33 @@ namespace PrideWeddingPlanners.Models
 {
     public class Client
     {
+
         [Key]
         public int ID { get; set; }
-        public int client_NIC { get; set; }
-        public string F_name { get; set; }
-        public string L_name { get; set; }
-       
+        public int ClientNIC { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
         [DataType(DataType.PhoneNumber)]
-        public int tele_no { get; set; }
+        public int TeleNo { get; set; }
         public string Address { get; set; }
-        public string username { get; set; }
 
+        [Required(ErrorMessage = "UserName is Required")]
+        public string UserName { get; set; }
+
+        [Required(ErrorMessage = "Email is Required")]
         [DataType(DataType.EmailAddress)]
-        
-        public string email { get; set; }
+        [EmailAddress]
+
+        public string Email { get; set; }
+
+        [Required(ErrorMessage = "Password is Required")]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        public string password { get; set; }
+        [Compare("password", ErrorMessage = "Password Does Not Matched")]
+        public string ConfirmPassword { get; set; }
 
-        [DataType(DataType.Password)]
-        public string retypepassword { get; set; }
     }
 }
