@@ -8,7 +8,10 @@ import {
   faYoutube,
   faFacebook,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faWhatsapp,
+  faFacebookMessenger,
+  faTelegram
 } from "@fortawesome/free-brands-svg-icons";
 export default class Contactinfo extends Component {
     render() {
@@ -19,30 +22,50 @@ export default class Contactinfo extends Component {
                 </div>
                
                 <div className="social-container" >
-                <h3>@prideweddingplanners</h3>
+                <h4>@prideweddingplanners</h4>
                 <a
                    href="https://www.youtube.com/c/jamesqquick"
                     className="youtube social"
                 >
-        <FontAwesomeIcon icon={faYoutube} size="5x"  />
+        <FontAwesomeIcon icon={faYoutube} size="3x"  />
       </a>
       <a
         href="https://www.facebook.com/Pride-Wedding-Planners-100516545407395"
         className="facebook social"
       >
-        <FontAwesomeIcon icon={faFacebook} size="5x" />
+        <FontAwesomeIcon icon={faFacebook} size="3x" />
       </a>
       <a href="https://twitter.com/PlannersPride" className="twitter social">
-        <FontAwesomeIcon icon={faTwitter} size="5x" />
+        <FontAwesomeIcon icon={faTwitter} size="3x" />
       </a>
       <a
         href="https://www.instagram.com/learnbuildteach"
         className="instagram social"
       >
-        <FontAwesomeIcon icon={faInstagram} size="5x"  />
+        <FontAwesomeIcon icon={faInstagram} size="3x"  />
+      </a>
+      <a
+        href="https://web.whatsapp.com/"
+        className="whatsapp social"
+      >
+        <FontAwesomeIcon icon={faWhatsapp} size="3x" />
+      </a>
+      <a
+        href="https://www.facebook.com/messenger/"
+        className="Messenger social"
+      >
+        <FontAwesomeIcon icon={faFacebookMessenger} size="3x" />
+      </a>
+      <a
+        href="https://telegram.org/blog/login"
+        className="Telegram social"
+      >
+        <FontAwesomeIcon icon={faTelegram} size="3x" />
       </a>
     </div>
+    
             </form>
+            
         );
     }
 }

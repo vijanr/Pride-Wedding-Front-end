@@ -1,15 +1,17 @@
 .App {
     font-family: sans-serif;
     text-align: center;
+    font-size: large;
   }
   
   /* SOCIAL STUFF */
   .social-container {
-   
+    font-size: small;
     font-style: italic;
+    text-align: center;
   }
   a.social {
-    margin: 0 3rem;
+    margin: 0 2rem;
     transition: transform 250ms;
     display: inline-block;
    
@@ -34,5 +36,8 @@
   
   a.instagram {
     color: black;
+  }
+  a.whatsapp {
+    color: rgb(66, 224, 87);
   }
   
