@@ -10,13 +10,13 @@ namespace PrideWeddingPlanners.Models
     {
 
         [Key]
-        public int ID { get; set; }
-        public int ClientNIC { get; set; }
+        public int id { get; set; }
+        public string ClientNIC { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
         [DataType(DataType.PhoneNumber)]
-        public int TeleNo { get; set; }
+        public string TeleNo { get; set; }
         public string Address { get; set; }
 
         [Required(ErrorMessage = "UserName is Required")]

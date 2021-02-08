@@ -47,7 +47,7 @@ namespace PrideWeddingPlanners.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutClient(int id, Client client)
         {
-            if (id != client.ID)
+            if (id != client.id)
             {
                 return BadRequest();
             }
@@ -82,7 +82,7 @@ namespace PrideWeddingPlanners.Controllers
             _context.ClientTable.Add(client);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetClient", new { id = client.ID }, client);
+            return CreatedAtAction("GetClient", new { id = client.id }, client);
         }
 
         // DELETE: api/Clients/5
@@ -103,7 +103,7 @@ namespace PrideWeddingPlanners.Controllers
 
         private bool ClientExists(int id)
         {
-            return _context.ClientTable.Any(e => e.ID == id);
+            return _context.ClientTable.Any(e => e.id == id);
         }
     }
 }
